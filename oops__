@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class xyz{
+    int num;
+    public:
+    xyz(int num) {
+        this->num = num;
+    }
+    string operator+(string st) {
+        return (to_string(num).append(st));
+    }
+};
+
+int main() {
+    string s = "hehe";
+    xyz a(254);
+    cout<<a+s;
+    return 0;
+}
